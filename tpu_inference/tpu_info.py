@@ -59,7 +59,7 @@ def get_num_cores_per_chip() -> int:
     tpu_type = get_tpu_type()
     if tpu_type.startswith(("v5litepod", "v6e")):
         return 1
-    return 2
+    return 4
 
 
 def get_num_chips() -> int:
